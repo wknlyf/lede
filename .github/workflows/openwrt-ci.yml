@@ -59,7 +59,6 @@ jobs:
         run: |
           echo 'src-git helloworld https://github.com/fw876/helloworld'>>feeds.conf.default
           echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr'>>feeds.conf.default
-#          echo 'src-git small https://github.com/kenzok8/small'>>feeds.conf.default
           echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -83,8 +82,6 @@ jobs:
           CONFIG_PACKAGE_luci-theme-atmaterial=y
           CONFIG_PACKAGE_luci-app-aliddns=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
-#           CONFIG_PACKAGE_luci-app-smartdns=y
-#          CONFIG_PACKAGE_luci-app-passwall=y
           CONFIG_PACKAGE_luci-theme-argon_new=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-theme-opentomcat=y
